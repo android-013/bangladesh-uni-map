@@ -1,0 +1,21 @@
+{
+  "name": "bd-institution-zone-map-v3-no-tiles",
+  "version": "5.0.0",
+  "description": "Interactive Bangladesh 64-district university and medical college zone map.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "bangladesh",
+    "district",
+    "university",
+    "medical-college",
+    "svg-map",
+    "zone-planner",
+    "no-tiles"
+  ],
+  "author": "",
+  "license": "MIT"
+}
