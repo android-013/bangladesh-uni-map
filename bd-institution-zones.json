@@ -1,0 +1,164 @@
+{
+  "exportedAt": "2026-06-14T11:39:45.591Z",
+  "zones": [
+    {
+      "name": "Zone 1",
+      "color": "#60a5fa",
+      "districts": [
+        "Bogura",
+        "Chapainawabganj",
+        "Dinajpur",
+        "Gaibandha",
+        "Joypurhat",
+        "Kurigram",
+        "Lalmonirhat",
+        "Naogaon",
+        "Natore",
+        "Nilphamari",
+        "Pabna",
+        "Panchagarh",
+        "Rajshahi",
+        "Rangpur",
+        "Sirajganj",
+        "Thakurgaon"
+      ],
+      "counts": {
+        "districts": 16,
+        "totalInstitutions": 40,
+        "totalUniversities": 22,
+        "totalMedicalColleges": 18,
+        "publicUniversities": 11,
+        "privateUniversities": 11,
+        "internationalUniversities": 0,
+        "publicMedicalColleges": 8,
+        "privateMedicalColleges": 7,
+        "militaryMedicalColleges": 2,
+        "proposedMedicalColleges": 1
+      }
+    },
+    {
+      "name": "Zone 2",
+      "color": "#34d399",
+      "districts": [
+        "Bagerhat",
+        "Barguna",
+        "Barishal",
+        "Bhola",
+        "Chuadanga",
+        "Faridpur",
+        "Gopalganj",
+        "Jashore",
+        "Jhalokati",
+        "Jhenaidah",
+        "Khulna",
+        "Kushtia",
+        "Madaripur",
+        "Magura",
+        "Meherpur",
+        "Narail",
+        "Patuakhali",
+        "Pirojpur",
+        "Rajbari",
+        "Satkhira",
+        "Shariatpur"
+      ],
+      "counts": {
+        "districts": 21,
+        "totalInstitutions": 42,
+        "totalUniversities": 25,
+        "totalMedicalColleges": 17,
+        "publicUniversities": 13,
+        "privateUniversities": 12,
+        "internationalUniversities": 0,
+        "publicMedicalColleges": 9,
+        "privateMedicalColleges": 7,
+        "militaryMedicalColleges": 1,
+        "proposedMedicalColleges": 0
+      }
+    },
+    {
+      "name": "Zone 3",
+      "color": "#fbbf24",
+      "districts": [
+        "Dhaka"
+      ],
+      "counts": {
+        "districts": 1,
+        "totalInstitutions": 109,
+        "totalUniversities": 74,
+        "totalMedicalColleges": 35,
+        "publicUniversities": 12,
+        "privateUniversities": 62,
+        "internationalUniversities": 0,
+        "publicMedicalColleges": 4,
+        "privateMedicalColleges": 30,
+        "militaryMedicalColleges": 1,
+        "proposedMedicalColleges": 0
+      }
+    },
+    {
+      "name": "Zone 4",
+      "color": "#fb7185",
+      "districts": [
+        "Bandarban",
+        "Chandpur",
+        "Chattogram",
+        "Cox's Bazar",
+        "Cumilla",
+        "Feni",
+        "Khagrachhari",
+        "Lakshmipur",
+        "Munshiganj",
+        "Narayanganj",
+        "Noakhali",
+        "Rangamati"
+      ],
+      "counts": {
+        "districts": 12,
+        "totalInstitutions": 50,
+        "totalUniversities": 30,
+        "totalMedicalColleges": 20,
+        "publicUniversities": 10,
+        "privateUniversities": 19,
+        "internationalUniversities": 1,
+        "publicMedicalColleges": 6,
+        "privateMedicalColleges": 11,
+        "militaryMedicalColleges": 3,
+        "proposedMedicalColleges": 0
+      }
+    },
+    {
+      "name": "Zone 5",
+      "color": "#c084fc",
+      "districts": [
+        "Brahmanbaria",
+        "Gazipur",
+        "Habiganj",
+        "Jamalpur",
+        "Kishoreganj",
+        "Manikganj",
+        "Moulvibazar",
+        "Mymensingh",
+        "Narsingdi",
+        "Netrokona",
+        "Sherpur",
+        "Sunamganj",
+        "Sylhet",
+        "Tangail"
+      ],
+      "counts": {
+        "districts": 14,
+        "totalInstitutions": 49,
+        "totalUniversities": 26,
+        "totalMedicalColleges": 23,
+        "publicUniversities": 16,
+        "privateUniversities": 9,
+        "internationalUniversities": 1,
+        "publicMedicalColleges": 10,
+        "privateMedicalColleges": 13,
+        "militaryMedicalColleges": 0,
+        "proposedMedicalColleges": 0
+      }
+    }
+  ]
+}
