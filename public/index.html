@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BD District Institution Zone Map</title>
+  <link rel="stylesheet" href="/style.css?v=5" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Bangladesh district map</p>
+      <h1>University & Medical College Zone Planner</h1>
+      <p class="subtitle">Click districts on the map or list to build up to 5 custom zones and calculate university totals instantly.</p>
+    </div>
+    <div class="header-actions">
+      <button id="saveZonesBtn" class="primary-btn">Save zones</button>
+      <button id="resetZonesBtn" class="ghost-btn">Reset</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel map-panel">
+      <div class="toolbar">
+        <div>
+          <h2>Institution map</h2>
+          <p id="mapStatus">Loading real digital district boundary map...</p>
+        </div>
+        <div class="legend" aria-label="Map legend">
+          <span><i class="legend-dot zero"></i>0</span>
+          <span><i class="legend-dot low"></i>1–2</span>
+          <span><i class="legend-dot mid"></i>3–6</span>
+          <span><i class="legend-dot high"></i>7–20</span>
+          <span><i class="legend-dot very-high"></i>20+</span>
+        </div>
+      </div>
+
+      <div id="map" class="svg-map-shell">
+        <svg id="districtSvg" viewBox="0 0 1000 900" role="img" aria-label="Bangladesh digital district boundary institution map"></svg>
+        <div id="mapTooltip" class="map-tooltip" hidden></div>
+      </div>
+      <div class="map-controls">
+        <button id="fitMapBtn" class="ghost-btn">Fit Bangladesh</button>
+        <label class="toggle-label"><input id="labelToggle" type="checkbox" checked /> Show district names</label>
+      </div>
+      <div class="map-help">
+        <strong>Digital map:</strong> this version displays all 64 districts, uses best-matching boundary data, and has no map tiles, no Leaflet CDN, no SRI errors. Use mouse wheel to zoom and drag to pan.
+      </div>
+    </section>
+
+    <aside class="side">
+      <section class="panel">
+        <h2>National totals</h2>
+        <div id="nationalStats" class="stats-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title-row">
+          <h2>Zones</h2>
+          <span class="muted">Maximum 5</span>
+        </div>
+        <div id="zoneTabs" class="zone-tabs"></div>
+        <label class="field-label" for="zoneNameInput">Active zone name</label>
+        <input id="zoneNameInput" class="text-input" maxlength="28" />
+        <div class="zone-actions">
+          <button id="clearActiveZoneBtn" class="ghost-btn">Clear active zone</button>
+          <button id="exportZonesBtn" class="ghost-btn">Export JSON</button>
+        </div>
+        <div id="zoneSummary" class="zone-summary"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title-row">
+          <h2>District selector</h2>
+          <span id="districtCountLabel" class="muted"></span>
+        </div>
+        <input id="districtSearch" class="text-input" placeholder="Search district, division..." />
+        <select id="divisionFilter" class="text-input">
+          <option value="">All divisions</option>
+        </select>
+        <div id="districtList" class="district-list"></div>
+      </section>
+    </aside>
+  </main>
+
+  <section class="panel table-panel">
+    <div class="section-title-row">
+      <h2>District breakdown</h2>
+      <button id="downloadCsvBtn" class="ghost-btn">Download CSV</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Division</th>
+            <th>District</th>
+            <th>Total institutions</th>
+            <th>Total universities</th>
+            <th>Public univ.</th>
+            <th>Private univ.</th>
+            <th>Medical colleges</th>
+          </tr>
+        </thead>
+        <tbody id="districtTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <template id="statTemplate">
+    <div class="stat-card">
+      <span class="stat-value"></span>
+      <span class="stat-label"></span>
+    </div>
+  </template>
+
+  <script src="/app.js?v=5"></script>
+</body>
+</html>
